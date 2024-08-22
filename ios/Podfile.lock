@@ -1,0 +1,331 @@
+PODS:
+  - agora_rtc_engine (6.2.2):
+    - AgoraIrisRTC_iOS (= 4.2.2-build.1)
+    - AgoraRtcEngine_iOS (= 4.2.2)
+    - Flutter
+  - agora_rtm (1.5.8):
+    - AgoraRtm_iOS (= 1.5.1)
+    - Flutter
+  - agora_uikit (0.0.1):
+    - Flutter
+  - AgoraIrisRTC_iOS (4.2.2-build.1)
+  - AgoraRtcEngine_iOS (4.2.2):
+    - AgoraRtcEngine_iOS/AIAEC (= 4.2.2)
+    - AgoraRtcEngine_iOS/AINS (= 4.2.2)
+    - AgoraRtcEngine_iOS/AudioBeauty (= 4.2.2)
+    - AgoraRtcEngine_iOS/ClearVision (= 4.2.2)
+    - AgoraRtcEngine_iOS/ContentInspect (= 4.2.2)
+    - AgoraRtcEngine_iOS/DRM (= 4.2.2)
+    - AgoraRtcEngine_iOS/FaceDetection (= 4.2.2)
+    - AgoraRtcEngine_iOS/ReplayKit (= 4.2.2)
+    - AgoraRtcEngine_iOS/RtcBasic (= 4.2.2)
+    - AgoraRtcEngine_iOS/SpatialAudio (= 4.2.2)
+    - AgoraRtcEngine_iOS/VideoCodecDec (= 4.2.2)
+    - AgoraRtcEngine_iOS/VideoCodecEnc (= 4.2.2)
+    - AgoraRtcEngine_iOS/VirtualBackground (= 4.2.2)
+    - AgoraRtcEngine_iOS/VQA (= 4.2.2)
+  - AgoraRtcEngine_iOS/AIAEC (4.2.2)
+  - AgoraRtcEngine_iOS/AINS (4.2.2)
+  - AgoraRtcEngine_iOS/AudioBeauty (4.2.2)
+  - AgoraRtcEngine_iOS/ClearVision (4.2.2)
+  - AgoraRtcEngine_iOS/ContentInspect (4.2.2)
+  - AgoraRtcEngine_iOS/DRM (4.2.2)
+  - AgoraRtcEngine_iOS/FaceDetection (4.2.2)
+  - AgoraRtcEngine_iOS/ReplayKit (4.2.2)
+  - AgoraRtcEngine_iOS/RtcBasic (4.2.2)
+  - AgoraRtcEngine_iOS/SpatialAudio (4.2.2)
+  - AgoraRtcEngine_iOS/VideoCodecDec (4.2.2)
+  - AgoraRtcEngine_iOS/VideoCodecEnc (4.2.2)
+  - AgoraRtcEngine_iOS/VirtualBackground (4.2.2)
+  - AgoraRtcEngine_iOS/VQA (4.2.2)
+  - AgoraRtm_iOS (1.5.1)
+  - connectivity_plus (0.0.1):
+    - Flutter
+    - ReachabilitySwift
+  - DKImagePickerController/Core (4.3.4):
+    - DKImagePickerController/ImageDataManager
+    - DKImagePickerController/Resource
+  - DKImagePickerController/ImageDataManager (4.3.4)
+  - DKImagePickerController/PhotoGallery (4.3.4):
+    - DKImagePickerController/Core
+    - DKPhotoGallery
+  - DKImagePickerController/Resource (4.3.4)
+  - DKPhotoGallery (0.0.17):
+    - DKPhotoGallery/Core (= 0.0.17)
+    - DKPhotoGallery/Model (= 0.0.17)
+    - DKPhotoGallery/Preview (= 0.0.17)
+    - DKPhotoGallery/Resource (= 0.0.17)
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Core (0.0.17):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Preview
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Model (0.0.17):
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Preview (0.0.17):
+    - DKPhotoGallery/Model
+    - DKPhotoGallery/Resource
+    - SDWebImage
+    - SwiftyGif
+  - DKPhotoGallery/Resource (0.0.17):
+    - SDWebImage
+    - SwiftyGif
+  - file_picker (0.0.1):
+    - DKImagePickerController/PhotoGallery
+    - Flutter
+  - Firebase/CoreOnly (10.15.0):
+    - FirebaseCore (= 10.15.0)
+  - Firebase/Messaging (10.15.0):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (~> 10.15.0)
+  - firebase_core (2.17.0):
+    - Firebase/CoreOnly (= 10.15.0)
+    - Flutter
+  - firebase_messaging (14.6.9):
+    - Firebase/Messaging (= 10.15.0)
+    - firebase_core
+    - Flutter
+  - FirebaseCore (10.15.0):
+    - FirebaseCoreInternal (~> 10.0)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GoogleUtilities/Logger (~> 7.8)
+  - FirebaseCoreInternal (10.16.0):
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+  - FirebaseInstallations (10.16.0):
+    - FirebaseCore (~> 10.0)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GoogleUtilities/UserDefaults (~> 7.8)
+    - PromisesObjC (~> 2.1)
+  - FirebaseMessaging (10.15.0):
+    - FirebaseCore (~> 10.0)
+    - FirebaseInstallations (~> 10.0)
+    - GoogleDataTransport (~> 9.2)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GoogleUtilities/Reachability (~> 7.8)
+    - GoogleUtilities/UserDefaults (~> 7.8)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+  - Flutter (1.0.0)
+  - flutter_inappwebview (0.0.1):
+    - Flutter
+    - flutter_inappwebview/Core (= 0.0.1)
+    - OrderedSet (~> 5.0)
+  - flutter_inappwebview/Core (0.0.1):
+    - Flutter
+    - OrderedSet (~> 5.0)
+  - flutter_local_notifications (0.0.1):
+    - Flutter
+  - flutter_native_splash (0.0.1):
+    - Flutter
+  - fluttertoast (0.0.2):
+    - Flutter
+    - Toast
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - GoogleDataTransport (9.2.5):
+    - GoogleUtilities/Environment (~> 7.7)
+    - nanopb (< 2.30910.0, >= 2.30908.0)
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/AppDelegateSwizzler (7.11.5):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (7.11.5):
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Logger (7.11.5):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/Network (7.11.5):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.11.5)"
+  - GoogleUtilities/Reachability (7.11.5):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (7.11.5):
+    - GoogleUtilities/Logger
+  - image_picker_ios (0.0.1):
+    - Flutter
+  - iris_method_channel (0.0.1):
+    - Flutter
+  - nanopb (2.30909.0):
+    - nanopb/decode (= 2.30909.0)
+    - nanopb/encode (= 2.30909.0)
+  - nanopb/decode (2.30909.0)
+  - nanopb/encode (2.30909.0)
+  - NWWebSocket (0.5.3)
+  - OrderedSet (5.0.0)
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - permission_handler_apple (9.1.1):
+    - Flutter
+  - PromisesObjC (2.3.1)
+  - pusher_channels_flutter (0.0.1):
+    - Flutter
+    - PusherSwift (~> 10.1.4)
+  - PusherSwift (10.1.4):
+    - NWWebSocket (~> 0.5.3)
+    - TweetNacl (~> 1.0.0)
+  - ReachabilitySwift (5.0.0)
+  - SDWebImage (5.18.2):
+    - SDWebImage/Core (= 5.18.2)
+  - SDWebImage/Core (5.18.2)
+  - share_plus (0.0.1):
+    - Flutter
+  - sqflite (0.0.3):
+    - Flutter
+    - FMDB (>= 2.7.5)
+  - SwiftyGif (5.4.4)
+  - Toast (4.0.0)
+  - TweetNacl (1.0.2)
+  - url_launcher_ios (0.0.1):
+    - Flutter
+  - webview_flutter_wkwebview (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - agora_rtc_engine (from `.symlinks/plugins/agora_rtc_engine/ios`)
+  - agora_rtm (from `.symlinks/plugins/agora_rtm/ios`)
+  - agora_uikit (from `.symlinks/plugins/agora_uikit/ios`)
+  - connectivity_plus (from `.symlinks/plugins/connectivity_plus/ios`)
+  - file_picker (from `.symlinks/plugins/file_picker/ios`)
+  - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
+  - firebase_messaging (from `.symlinks/plugins/firebase_messaging/ios`)
+  - Flutter (from `Flutter`)
+  - flutter_inappwebview (from `.symlinks/plugins/flutter_inappwebview/ios`)
+  - flutter_local_notifications (from `.symlinks/plugins/flutter_local_notifications/ios`)
+  - flutter_native_splash (from `.symlinks/plugins/flutter_native_splash/ios`)
+  - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
+  - image_picker_ios (from `.symlinks/plugins/image_picker_ios/ios`)
+  - iris_method_channel (from `.symlinks/plugins/iris_method_channel/ios`)
+  - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/ios`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
+  - pusher_channels_flutter (from `.symlinks/plugins/pusher_channels_flutter/ios`)
+  - share_plus (from `.symlinks/plugins/share_plus/ios`)
+  - sqflite (from `.symlinks/plugins/sqflite/ios`)
+  - url_launcher_ios (from `.symlinks/plugins/url_launcher_ios/ios`)
+  - webview_flutter_wkwebview (from `.symlinks/plugins/webview_flutter_wkwebview/ios`)
+
+SPEC REPOS:
+  trunk:
+    - AgoraIrisRTC_iOS
+    - AgoraRtcEngine_iOS
+    - AgoraRtm_iOS
+    - DKImagePickerController
+    - DKPhotoGallery
+    - Firebase
+    - FirebaseCore
+    - FirebaseCoreInternal
+    - FirebaseInstallations
+    - FirebaseMessaging
+    - FMDB
+    - GoogleDataTransport
+    - GoogleUtilities
+    - nanopb
+    - NWWebSocket
+    - OrderedSet
+    - PromisesObjC
+    - PusherSwift
+    - ReachabilitySwift
+    - SDWebImage
+    - SwiftyGif
+    - Toast
+    - TweetNacl
+
+EXTERNAL SOURCES:
+  agora_rtc_engine:
+    :path: ".symlinks/plugins/agora_rtc_engine/ios"
+  agora_rtm:
+    :path: ".symlinks/plugins/agora_rtm/ios"
+  agora_uikit:
+    :path: ".symlinks/plugins/agora_uikit/ios"
+  connectivity_plus:
+    :path: ".symlinks/plugins/connectivity_plus/ios"
+  file_picker:
+    :path: ".symlinks/plugins/file_picker/ios"
+  firebase_core:
+    :path: ".symlinks/plugins/firebase_core/ios"
+  firebase_messaging:
+    :path: ".symlinks/plugins/firebase_messaging/ios"
+  Flutter:
+    :path: Flutter
+  flutter_inappwebview:
+    :path: ".symlinks/plugins/flutter_inappwebview/ios"
+  flutter_local_notifications:
+    :path: ".symlinks/plugins/flutter_local_notifications/ios"
+  flutter_native_splash:
+    :path: ".symlinks/plugins/flutter_native_splash/ios"
+  fluttertoast:
+    :path: ".symlinks/plugins/fluttertoast/ios"
+  image_picker_ios:
+    :path: ".symlinks/plugins/image_picker_ios/ios"
+  iris_method_channel:
+    :path: ".symlinks/plugins/iris_method_channel/ios"
+  path_provider_foundation:
+    :path: ".symlinks/plugins/path_provider_foundation/ios"
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
+  pusher_channels_flutter:
+    :path: ".symlinks/plugins/pusher_channels_flutter/ios"
+  share_plus:
+    :path: ".symlinks/plugins/share_plus/ios"
+  sqflite:
+    :path: ".symlinks/plugins/sqflite/ios"
+  url_launcher_ios:
+    :path: ".symlinks/plugins/url_launcher_ios/ios"
+  webview_flutter_wkwebview:
+    :path: ".symlinks/plugins/webview_flutter_wkwebview/ios"
+
+SPEC CHECKSUMS:
+  agora_rtc_engine: 667a7de14f35858a31b0c64cd54042a2158ef198
+  agora_rtm: 49a7d867ad91dfe587a3da4636273b80df0fe00d
+  agora_uikit: ca47b21e2af19474ddd8ec153670c2dc8cf3a9e8
+  AgoraIrisRTC_iOS: 7e71322c06db6c29ceaf89a964fb8b2700a75001
+  AgoraRtcEngine_iOS: c510de329cd905daff3f01fa4c872ea6d5eaee23
+  AgoraRtm_iOS: 595a9fa33a409831e6183396ea8f8bc563918403
+  connectivity_plus: 413a8857dd5d9f1c399a39130850d02fe0feaf7e
+  DKImagePickerController: b512c28220a2b8ac7419f21c491fc8534b7601ac
+  DKPhotoGallery: fdfad5125a9fdda9cc57df834d49df790dbb4179
+  file_picker: ce3938a0df3cc1ef404671531facef740d03f920
+  Firebase: 66043bd4579e5b73811f96829c694c7af8d67435
+  firebase_core: 28e84c2a4fcf6a50ef83f47b145ded8c1fa331e4
+  firebase_messaging: 91ec967913a5d144f951b3c3ac17a57796d38735
+  FirebaseCore: 2cec518b43635f96afe7ac3a9c513e47558abd2e
+  FirebaseCoreInternal: 26233f705cc4531236818a07ac84d20c333e505a
+  FirebaseInstallations: b822f91a61f7d1ba763e5ccc9d4f2e6f2ed3b3ee
+  FirebaseMessaging: 0c0ae1eb722ef0c07f7801e5ded8dccd1357d6d4
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  flutter_inappwebview: 3d32228f1304635e7c028b0d4252937730bbc6cf
+  flutter_local_notifications: 0c0b1ae97e741e1521e4c1629a459d04b9aec743
+  flutter_native_splash: 52501b97d1c0a5f898d687f1646226c1f93c56ef
+  fluttertoast: fafc4fa4d01a6a9e4f772ecd190ffa525e9e2d9c
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  GoogleDataTransport: 54dee9d48d14580407f8f5fbf2f496e92437a2f2
+  GoogleUtilities: 13e2c67ede716b8741c7989e26893d151b2b2084
+  image_picker_ios: 4a8aadfbb6dc30ad5141a2ce3832af9214a705b5
+  iris_method_channel: 0617c689164d8154c020c50f63ca79f92b8a7b9d
+  nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
+  NWWebSocket: 05fc4419102f33934f87157d70228837e327064f
+  OrderedSet: aaeb196f7fef5a9edf55d89760da9176ad40b93c
+  path_provider_foundation: 29f094ae23ebbca9d3d0cec13889cd9060c0e943
+  permission_handler_apple: e76247795d700c14ea09e3a2d8855d41ee80a2e6
+  PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
+  pusher_channels_flutter: 2bc74ab92bacd0ac436e10fa326125408d3c7598
+  PusherSwift: 671c49e9c5441e30960d2e0282a879b2f8c80bcb
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  SDWebImage: c0de394d7cf7f9838aed1fd6bb6037654a4572e4
+  share_plus: 056a1e8ac890df3e33cb503afffaf1e9b4fbae68
+  sqflite: 31f7eba61e3074736dff8807a9b41581e4f7f15a
+  SwiftyGif: 93a1cc87bf3a51916001cf8f3d63835fb64c819f
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  TweetNacl: 3abf4d1d2082b0114e7a67410e300892448951e6
+  url_launcher_ios: 08a3dfac5fb39e8759aeb0abbd5d9480f30fc8b4
+  webview_flutter_wkwebview: b7e70ef1ddded7e69c796c7390ee74180182971f
+
+PODFILE CHECKSUM: d7c8c2b05956323833145caa5e0109c2ae3c0025
+
+COCOAPODS: 1.12.1

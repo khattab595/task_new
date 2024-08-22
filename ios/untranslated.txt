@@ -1,0 +1,8 @@
+{
+  "ar": [
+    "new_account",
+    "add_profile_picture",
+    "next",
+    "terms_and_conditions"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "376653610895",
+    "project_id": "thebusinessquare",
+    "storage_bucket": "thebusinessquare.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376653610895:android:27a2b1b526284584f795fa",
+        "android_client_info": {
+          "package_name": "com.business.square"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376653610895-taig2b9ql6v6g4m33m3nj9uddutmrb29.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhS2JpeR_iiPfCuHJREwnI9bRC5Ld0PEE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "376653610895-taig2b9ql6v6g4m33m3nj9uddutmrb29.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "376653610895-g54mohmvso82f5elbi93o2cssi3rnhv5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.business.square"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
