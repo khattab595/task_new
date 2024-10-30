@@ -1,5 +1,4 @@
 import 'package:get_storage/get_storage.dart';
-import 'package:the_business_square/data/models/auth/Data.dart';
 
 class KStorageKeys {
   static const String themeMode = 'themeMode';
@@ -29,10 +28,7 @@ class KStorage {
   get delToken => _storage.remove(KStorageKeys.token);
   setToken(String? token) => _storage.write(KStorageKeys.token, token.toString().split('|').last);
   String? get getToken => _storage.read(KStorageKeys.token);
-
-  setUser(UserData? user) => _storage.write(KStorageKeys.user, user?.toJson());
-  UserData? get getUser => UserData.fromJson(_storage.read(KStorageKeys.user));
-  get delUser => _storage.remove(KStorageKeys.user);
+   get delUser => _storage.remove(KStorageKeys.user);
 
   setFcmToken(String? token) => _storage.write(KStorageKeys.fcmToken, token);
   String? get getFcmToken => _storage.read(KStorageKeys.fcmToken);

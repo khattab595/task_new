@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:the_business_square/views/user/auth/login/login_view.dart';
-import '../../../shared/theme/assets.dart';
+ import '../../../shared/theme/assets.dart';
 import '../../../shared/theme/colors.dart';
 import 'widgets/slide.dart';
 import 'widgets/slide_dotes.dart';
@@ -84,7 +83,7 @@ class _OnBoardingState extends State<OnBoarding> {
                   ),
                   onPressed: () async {
                     if (_currentPage == slideList.length - 1) {
-                      Get.offAll(() =>   LoginView());
+
                     } else {
                       _pageController.nextPage(duration: const Duration(milliseconds: 300), curve: Curves.easeOutCubic);
                     }

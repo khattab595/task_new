@@ -55,11 +55,11 @@ class ApiClientBloc extends Cubit<ApiClientState> {
   }
 
   onRequestCallBack(RequestOptions request) {
-    final token = KStorage.i.getToken;
-    final language = KStorage.i.getLang ?? "en";
-    request.headers.addAll({'Authorization': "Bearer $token"});
-    request.headers.addAll({"localization": language});
-    request.headers.addAll({"Accept": 'application/json'});
+    // final token = KStorage.i.getToken;
+    // final language = KStorage.i.getLang ?? "en";
+    // request.headers.addAll({'Authorization': "Bearer $token"});
+    // request.headers.addAll({"localization": language});
+   request.headers.addAll({"Accept": 'application/json'});
   }
 
   Future<Response> scheduleRetry(RequestOptions options) {

@@ -12,7 +12,7 @@ part of 'failures.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$KFailure {
@@ -128,20 +128,20 @@ class _$KFailureCopyWithImpl<$Res, $Val extends KFailure>
 }
 
 /// @nodoc
-abstract class _$$KFailureErrorImplCopyWith<$Res> {
-  factory _$$KFailureErrorImplCopyWith(
-          _$KFailureErrorImpl value, $Res Function(_$KFailureErrorImpl) then) =
-      __$$KFailureErrorImplCopyWithImpl<$Res>;
+abstract class _$$KFailureErrorCopyWith<$Res> {
+  factory _$$KFailureErrorCopyWith(
+          _$KFailureError value, $Res Function(_$KFailureError) then) =
+      __$$KFailureErrorCopyWithImpl<$Res>;
   @useResult
   $Res call({String error});
 }
 
 /// @nodoc
-class __$$KFailureErrorImplCopyWithImpl<$Res>
-    extends _$KFailureCopyWithImpl<$Res, _$KFailureErrorImpl>
-    implements _$$KFailureErrorImplCopyWith<$Res> {
-  __$$KFailureErrorImplCopyWithImpl(
-      _$KFailureErrorImpl _value, $Res Function(_$KFailureErrorImpl) _then)
+class __$$KFailureErrorCopyWithImpl<$Res>
+    extends _$KFailureCopyWithImpl<$Res, _$KFailureError>
+    implements _$$KFailureErrorCopyWith<$Res> {
+  __$$KFailureErrorCopyWithImpl(
+      _$KFailureError _value, $Res Function(_$KFailureError) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -149,7 +149,7 @@ class __$$KFailureErrorImplCopyWithImpl<$Res>
   $Res call({
     Object? error = null,
   }) {
-    return _then(_$KFailureErrorImpl(
+    return _then(_$KFailureError(
       null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
@@ -160,8 +160,8 @@ class __$$KFailureErrorImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$KFailureErrorImpl implements KFailureError {
-  const _$KFailureErrorImpl(this.error);
+class _$KFailureError implements KFailureError {
+  const _$KFailureError(this.error);
 
   @override
   final String error;
@@ -172,10 +172,10 @@ class _$KFailureErrorImpl implements KFailureError {
   }
 
   @override
-  bool operator ==(Object other) {
+  bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$KFailureErrorImpl &&
+            other is _$KFailureError &&
             (identical(other.error, error) || other.error == error));
   }
 
@@ -185,8 +185,8 @@ class _$KFailureErrorImpl implements KFailureError {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$KFailureErrorImplCopyWith<_$KFailureErrorImpl> get copyWith =>
-      __$$KFailureErrorImplCopyWithImpl<_$KFailureErrorImpl>(this, _$identity);
+  _$$KFailureErrorCopyWith<_$KFailureError> get copyWith =>
+      __$$KFailureErrorCopyWithImpl<_$KFailureError>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -306,34 +306,34 @@ class _$KFailureErrorImpl implements KFailureError {
 }
 
 abstract class KFailureError implements KFailure {
-  const factory KFailureError(final String error) = _$KFailureErrorImpl;
+  const factory KFailureError(final String error) = _$KFailureError;
 
   String get error;
   @JsonKey(ignore: true)
-  _$$KFailureErrorImplCopyWith<_$KFailureErrorImpl> get copyWith =>
+  _$$KFailureErrorCopyWith<_$KFailureError> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$KFailureServerImplCopyWith<$Res> {
-  factory _$$KFailureServerImplCopyWith(_$KFailureServerImpl value,
-          $Res Function(_$KFailureServerImpl) then) =
-      __$$KFailureServerImplCopyWithImpl<$Res>;
+abstract class _$$KFailureServerCopyWith<$Res> {
+  factory _$$KFailureServerCopyWith(
+          _$KFailureServer value, $Res Function(_$KFailureServer) then) =
+      __$$KFailureServerCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$KFailureServerImplCopyWithImpl<$Res>
-    extends _$KFailureCopyWithImpl<$Res, _$KFailureServerImpl>
-    implements _$$KFailureServerImplCopyWith<$Res> {
-  __$$KFailureServerImplCopyWithImpl(
-      _$KFailureServerImpl _value, $Res Function(_$KFailureServerImpl) _then)
+class __$$KFailureServerCopyWithImpl<$Res>
+    extends _$KFailureCopyWithImpl<$Res, _$KFailureServer>
+    implements _$$KFailureServerCopyWith<$Res> {
+  __$$KFailureServerCopyWithImpl(
+      _$KFailureServer _value, $Res Function(_$KFailureServer) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$KFailureServerImpl implements KFailureServer {
-  const _$KFailureServerImpl();
+class _$KFailureServer implements KFailureServer {
+  const _$KFailureServer();
 
   @override
   String toString() {
@@ -341,9 +341,9 @@ class _$KFailureServerImpl implements KFailureServer {
   }
 
   @override
-  bool operator ==(Object other) {
+  bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$KFailureServerImpl);
+        (other.runtimeType == runtimeType && other is _$KFailureServer);
   }
 
   @override
@@ -467,24 +467,24 @@ class _$KFailureServerImpl implements KFailureServer {
 }
 
 abstract class KFailureServer implements KFailure {
-  const factory KFailureServer() = _$KFailureServerImpl;
+  const factory KFailureServer() = _$KFailureServer;
 }
 
 /// @nodoc
-abstract class _$$KFailureError401ImplCopyWith<$Res> {
-  factory _$$KFailureError401ImplCopyWith(_$KFailureError401Impl value,
-          $Res Function(_$KFailureError401Impl) then) =
-      __$$KFailureError401ImplCopyWithImpl<$Res>;
+abstract class _$$KFailureError401CopyWith<$Res> {
+  factory _$$KFailureError401CopyWith(
+          _$KFailureError401 value, $Res Function(_$KFailureError401) then) =
+      __$$KFailureError401CopyWithImpl<$Res>;
   @useResult
   $Res call({String e});
 }
 
 /// @nodoc
-class __$$KFailureError401ImplCopyWithImpl<$Res>
-    extends _$KFailureCopyWithImpl<$Res, _$KFailureError401Impl>
-    implements _$$KFailureError401ImplCopyWith<$Res> {
-  __$$KFailureError401ImplCopyWithImpl(_$KFailureError401Impl _value,
-      $Res Function(_$KFailureError401Impl) _then)
+class __$$KFailureError401CopyWithImpl<$Res>
+    extends _$KFailureCopyWithImpl<$Res, _$KFailureError401>
+    implements _$$KFailureError401CopyWith<$Res> {
+  __$$KFailureError401CopyWithImpl(
+      _$KFailureError401 _value, $Res Function(_$KFailureError401) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -492,7 +492,7 @@ class __$$KFailureError401ImplCopyWithImpl<$Res>
   $Res call({
     Object? e = null,
   }) {
-    return _then(_$KFailureError401Impl(
+    return _then(_$KFailureError401(
       null == e
           ? _value.e
           : e // ignore: cast_nullable_to_non_nullable
@@ -503,8 +503,8 @@ class __$$KFailureError401ImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$KFailureError401Impl implements KFailureError401 {
-  const _$KFailureError401Impl(this.e);
+class _$KFailureError401 implements KFailureError401 {
+  const _$KFailureError401(this.e);
 
   @override
   final String e;
@@ -515,10 +515,10 @@ class _$KFailureError401Impl implements KFailureError401 {
   }
 
   @override
-  bool operator ==(Object other) {
+  bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$KFailureError401Impl &&
+            other is _$KFailureError401 &&
             (identical(other.e, e) || other.e == e));
   }
 
@@ -528,9 +528,8 @@ class _$KFailureError401Impl implements KFailureError401 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$KFailureError401ImplCopyWith<_$KFailureError401Impl> get copyWith =>
-      __$$KFailureError401ImplCopyWithImpl<_$KFailureError401Impl>(
-          this, _$identity);
+  _$$KFailureError401CopyWith<_$KFailureError401> get copyWith =>
+      __$$KFailureError401CopyWithImpl<_$KFailureError401>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -650,29 +649,29 @@ class _$KFailureError401Impl implements KFailureError401 {
 }
 
 abstract class KFailureError401 implements KFailure {
-  const factory KFailureError401(final String e) = _$KFailureError401Impl;
+  const factory KFailureError401(final String e) = _$KFailureError401;
 
   String get e;
   @JsonKey(ignore: true)
-  _$$KFailureError401ImplCopyWith<_$KFailureError401Impl> get copyWith =>
+  _$$KFailureError401CopyWith<_$KFailureError401> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$KFailureError403ImplCopyWith<$Res> {
-  factory _$$KFailureError403ImplCopyWith(_$KFailureError403Impl value,
-          $Res Function(_$KFailureError403Impl) then) =
-      __$$KFailureError403ImplCopyWithImpl<$Res>;
+abstract class _$$KFailureError403CopyWith<$Res> {
+  factory _$$KFailureError403CopyWith(
+          _$KFailureError403 value, $Res Function(_$KFailureError403) then) =
+      __$$KFailureError403CopyWithImpl<$Res>;
   @useResult
   $Res call({String e});
 }
 
 /// @nodoc
-class __$$KFailureError403ImplCopyWithImpl<$Res>
-    extends _$KFailureCopyWithImpl<$Res, _$KFailureError403Impl>
-    implements _$$KFailureError403ImplCopyWith<$Res> {
-  __$$KFailureError403ImplCopyWithImpl(_$KFailureError403Impl _value,
-      $Res Function(_$KFailureError403Impl) _then)
+class __$$KFailureError403CopyWithImpl<$Res>
+    extends _$KFailureCopyWithImpl<$Res, _$KFailureError403>
+    implements _$$KFailureError403CopyWith<$Res> {
+  __$$KFailureError403CopyWithImpl(
+      _$KFailureError403 _value, $Res Function(_$KFailureError403) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -680,7 +679,7 @@ class __$$KFailureError403ImplCopyWithImpl<$Res>
   $Res call({
     Object? e = null,
   }) {
-    return _then(_$KFailureError403Impl(
+    return _then(_$KFailureError403(
       null == e
           ? _value.e
           : e // ignore: cast_nullable_to_non_nullable
@@ -691,8 +690,8 @@ class __$$KFailureError403ImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$KFailureError403Impl implements KFailureError403 {
-  const _$KFailureError403Impl(this.e);
+class _$KFailureError403 implements KFailureError403 {
+  const _$KFailureError403(this.e);
 
   @override
   final String e;
@@ -703,10 +702,10 @@ class _$KFailureError403Impl implements KFailureError403 {
   }
 
   @override
-  bool operator ==(Object other) {
+  bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$KFailureError403Impl &&
+            other is _$KFailureError403 &&
             (identical(other.e, e) || other.e == e));
   }
 
@@ -716,9 +715,8 @@ class _$KFailureError403Impl implements KFailureError403 {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$KFailureError403ImplCopyWith<_$KFailureError403Impl> get copyWith =>
-      __$$KFailureError403ImplCopyWithImpl<_$KFailureError403Impl>(
-          this, _$identity);
+  _$$KFailureError403CopyWith<_$KFailureError403> get copyWith =>
+      __$$KFailureError403CopyWithImpl<_$KFailureError403>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -838,29 +836,29 @@ class _$KFailureError403Impl implements KFailureError403 {
 }
 
 abstract class KFailureError403 implements KFailure {
-  const factory KFailureError403(final String e) = _$KFailureError403Impl;
+  const factory KFailureError403(final String e) = _$KFailureError403;
 
   String get e;
   @JsonKey(ignore: true)
-  _$$KFailureError403ImplCopyWith<_$KFailureError403Impl> get copyWith =>
+  _$$KFailureError403CopyWith<_$KFailureError403> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$KFailureOfflineImplCopyWith<$Res> {
-  factory _$$KFailureOfflineImplCopyWith(_$KFailureOfflineImpl value,
-          $Res Function(_$KFailureOfflineImpl) then) =
-      __$$KFailureOfflineImplCopyWithImpl<$Res>;
+abstract class _$$KFailureOfflineCopyWith<$Res> {
+  factory _$$KFailureOfflineCopyWith(
+          _$KFailureOffline value, $Res Function(_$KFailureOffline) then) =
+      __$$KFailureOfflineCopyWithImpl<$Res>;
   @useResult
   $Res call({RequestOptions? option});
 }
 
 /// @nodoc
-class __$$KFailureOfflineImplCopyWithImpl<$Res>
-    extends _$KFailureCopyWithImpl<$Res, _$KFailureOfflineImpl>
-    implements _$$KFailureOfflineImplCopyWith<$Res> {
-  __$$KFailureOfflineImplCopyWithImpl(
-      _$KFailureOfflineImpl _value, $Res Function(_$KFailureOfflineImpl) _then)
+class __$$KFailureOfflineCopyWithImpl<$Res>
+    extends _$KFailureCopyWithImpl<$Res, _$KFailureOffline>
+    implements _$$KFailureOfflineCopyWith<$Res> {
+  __$$KFailureOfflineCopyWithImpl(
+      _$KFailureOffline _value, $Res Function(_$KFailureOffline) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -868,7 +866,7 @@ class __$$KFailureOfflineImplCopyWithImpl<$Res>
   $Res call({
     Object? option = freezed,
   }) {
-    return _then(_$KFailureOfflineImpl(
+    return _then(_$KFailureOffline(
       option: freezed == option
           ? _value.option
           : option // ignore: cast_nullable_to_non_nullable
@@ -879,8 +877,8 @@ class __$$KFailureOfflineImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$KFailureOfflineImpl implements KFailureOffline {
-  const _$KFailureOfflineImpl({this.option});
+class _$KFailureOffline implements KFailureOffline {
+  const _$KFailureOffline({this.option});
 
   @override
   final RequestOptions? option;
@@ -891,10 +889,10 @@ class _$KFailureOfflineImpl implements KFailureOffline {
   }
 
   @override
-  bool operator ==(Object other) {
+  bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$KFailureOfflineImpl &&
+            other is _$KFailureOffline &&
             (identical(other.option, option) || other.option == option));
   }
 
@@ -904,9 +902,8 @@ class _$KFailureOfflineImpl implements KFailureOffline {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$KFailureOfflineImplCopyWith<_$KFailureOfflineImpl> get copyWith =>
-      __$$KFailureOfflineImplCopyWithImpl<_$KFailureOfflineImpl>(
-          this, _$identity);
+  _$$KFailureOfflineCopyWith<_$KFailureOffline> get copyWith =>
+      __$$KFailureOfflineCopyWithImpl<_$KFailureOffline>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1027,34 +1024,34 @@ class _$KFailureOfflineImpl implements KFailureOffline {
 
 abstract class KFailureOffline implements KFailure {
   const factory KFailureOffline({final RequestOptions? option}) =
-      _$KFailureOfflineImpl;
+      _$KFailureOffline;
 
   RequestOptions? get option;
   @JsonKey(ignore: true)
-  _$$KFailureOfflineImplCopyWith<_$KFailureOfflineImpl> get copyWith =>
+  _$$KFailureOfflineCopyWith<_$KFailureOffline> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$KFailureUserNotFoundImplCopyWith<$Res> {
-  factory _$$KFailureUserNotFoundImplCopyWith(_$KFailureUserNotFoundImpl value,
-          $Res Function(_$KFailureUserNotFoundImpl) then) =
-      __$$KFailureUserNotFoundImplCopyWithImpl<$Res>;
+abstract class _$$KFailureUserNotFoundCopyWith<$Res> {
+  factory _$$KFailureUserNotFoundCopyWith(_$KFailureUserNotFound value,
+          $Res Function(_$KFailureUserNotFound) then) =
+      __$$KFailureUserNotFoundCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$KFailureUserNotFoundImplCopyWithImpl<$Res>
-    extends _$KFailureCopyWithImpl<$Res, _$KFailureUserNotFoundImpl>
-    implements _$$KFailureUserNotFoundImplCopyWith<$Res> {
-  __$$KFailureUserNotFoundImplCopyWithImpl(_$KFailureUserNotFoundImpl _value,
-      $Res Function(_$KFailureUserNotFoundImpl) _then)
+class __$$KFailureUserNotFoundCopyWithImpl<$Res>
+    extends _$KFailureCopyWithImpl<$Res, _$KFailureUserNotFound>
+    implements _$$KFailureUserNotFoundCopyWith<$Res> {
+  __$$KFailureUserNotFoundCopyWithImpl(_$KFailureUserNotFound _value,
+      $Res Function(_$KFailureUserNotFound) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$KFailureUserNotFoundImpl implements KFailureUserNotFound {
-  const _$KFailureUserNotFoundImpl();
+class _$KFailureUserNotFound implements KFailureUserNotFound {
+  const _$KFailureUserNotFound();
 
   @override
   String toString() {
@@ -1062,10 +1059,9 @@ class _$KFailureUserNotFoundImpl implements KFailureUserNotFound {
   }
 
   @override
-  bool operator ==(Object other) {
+  bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$KFailureUserNotFoundImpl);
+        (other.runtimeType == runtimeType && other is _$KFailureUserNotFound);
   }
 
   @override
@@ -1189,31 +1185,29 @@ class _$KFailureUserNotFoundImpl implements KFailureUserNotFound {
 }
 
 abstract class KFailureUserNotFound implements KFailure {
-  const factory KFailureUserNotFound() = _$KFailureUserNotFoundImpl;
+  const factory KFailureUserNotFound() = _$KFailureUserNotFound;
 }
 
 /// @nodoc
-abstract class _$$KFailureLocationDeniedImplCopyWith<$Res> {
-  factory _$$KFailureLocationDeniedImplCopyWith(
-          _$KFailureLocationDeniedImpl value,
-          $Res Function(_$KFailureLocationDeniedImpl) then) =
-      __$$KFailureLocationDeniedImplCopyWithImpl<$Res>;
+abstract class _$$KFailureLocationDeniedCopyWith<$Res> {
+  factory _$$KFailureLocationDeniedCopyWith(_$KFailureLocationDenied value,
+          $Res Function(_$KFailureLocationDenied) then) =
+      __$$KFailureLocationDeniedCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$KFailureLocationDeniedImplCopyWithImpl<$Res>
-    extends _$KFailureCopyWithImpl<$Res, _$KFailureLocationDeniedImpl>
-    implements _$$KFailureLocationDeniedImplCopyWith<$Res> {
-  __$$KFailureLocationDeniedImplCopyWithImpl(
-      _$KFailureLocationDeniedImpl _value,
-      $Res Function(_$KFailureLocationDeniedImpl) _then)
+class __$$KFailureLocationDeniedCopyWithImpl<$Res>
+    extends _$KFailureCopyWithImpl<$Res, _$KFailureLocationDenied>
+    implements _$$KFailureLocationDeniedCopyWith<$Res> {
+  __$$KFailureLocationDeniedCopyWithImpl(_$KFailureLocationDenied _value,
+      $Res Function(_$KFailureLocationDenied) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$KFailureLocationDeniedImpl implements KFailureLocationDenied {
-  const _$KFailureLocationDeniedImpl();
+class _$KFailureLocationDenied implements KFailureLocationDenied {
+  const _$KFailureLocationDenied();
 
   @override
   String toString() {
@@ -1221,10 +1215,9 @@ class _$KFailureLocationDeniedImpl implements KFailureLocationDenied {
   }
 
   @override
-  bool operator ==(Object other) {
+  bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$KFailureLocationDeniedImpl);
+        (other.runtimeType == runtimeType && other is _$KFailureLocationDenied);
   }
 
   @override
@@ -1348,31 +1341,29 @@ class _$KFailureLocationDeniedImpl implements KFailureLocationDenied {
 }
 
 abstract class KFailureLocationDenied implements KFailure {
-  const factory KFailureLocationDenied() = _$KFailureLocationDeniedImpl;
+  const factory KFailureLocationDenied() = _$KFailureLocationDenied;
 }
 
 /// @nodoc
-abstract class _$$KFailureLocationDisabledImplCopyWith<$Res> {
-  factory _$$KFailureLocationDisabledImplCopyWith(
-          _$KFailureLocationDisabledImpl value,
-          $Res Function(_$KFailureLocationDisabledImpl) then) =
-      __$$KFailureLocationDisabledImplCopyWithImpl<$Res>;
+abstract class _$$KFailureLocationDisabledCopyWith<$Res> {
+  factory _$$KFailureLocationDisabledCopyWith(_$KFailureLocationDisabled value,
+          $Res Function(_$KFailureLocationDisabled) then) =
+      __$$KFailureLocationDisabledCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$KFailureLocationDisabledImplCopyWithImpl<$Res>
-    extends _$KFailureCopyWithImpl<$Res, _$KFailureLocationDisabledImpl>
-    implements _$$KFailureLocationDisabledImplCopyWith<$Res> {
-  __$$KFailureLocationDisabledImplCopyWithImpl(
-      _$KFailureLocationDisabledImpl _value,
-      $Res Function(_$KFailureLocationDisabledImpl) _then)
+class __$$KFailureLocationDisabledCopyWithImpl<$Res>
+    extends _$KFailureCopyWithImpl<$Res, _$KFailureLocationDisabled>
+    implements _$$KFailureLocationDisabledCopyWith<$Res> {
+  __$$KFailureLocationDisabledCopyWithImpl(_$KFailureLocationDisabled _value,
+      $Res Function(_$KFailureLocationDisabled) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$KFailureLocationDisabledImpl implements KFailureLocationDisabled {
-  const _$KFailureLocationDisabledImpl();
+class _$KFailureLocationDisabled implements KFailureLocationDisabled {
+  const _$KFailureLocationDisabled();
 
   @override
   String toString() {
@@ -1380,10 +1371,10 @@ class _$KFailureLocationDisabledImpl implements KFailureLocationDisabled {
   }
 
   @override
-  bool operator ==(Object other) {
+  bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$KFailureLocationDisabledImpl);
+            other is _$KFailureLocationDisabled);
   }
 
   @override
@@ -1507,33 +1498,32 @@ class _$KFailureLocationDisabledImpl implements KFailureLocationDisabled {
 }
 
 abstract class KFailureLocationDisabled implements KFailure {
-  const factory KFailureLocationDisabled() = _$KFailureLocationDisabledImpl;
+  const factory KFailureLocationDisabled() = _$KFailureLocationDisabled;
 }
 
 /// @nodoc
-abstract class _$$KFailureLocationDeniedPermanentlyImplCopyWith<$Res> {
-  factory _$$KFailureLocationDeniedPermanentlyImplCopyWith(
-          _$KFailureLocationDeniedPermanentlyImpl value,
-          $Res Function(_$KFailureLocationDeniedPermanentlyImpl) then) =
-      __$$KFailureLocationDeniedPermanentlyImplCopyWithImpl<$Res>;
+abstract class _$$KFailureLocationDeniedPermanentlyCopyWith<$Res> {
+  factory _$$KFailureLocationDeniedPermanentlyCopyWith(
+          _$KFailureLocationDeniedPermanently value,
+          $Res Function(_$KFailureLocationDeniedPermanently) then) =
+      __$$KFailureLocationDeniedPermanentlyCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$KFailureLocationDeniedPermanentlyImplCopyWithImpl<$Res>
-    extends _$KFailureCopyWithImpl<$Res,
-        _$KFailureLocationDeniedPermanentlyImpl>
-    implements _$$KFailureLocationDeniedPermanentlyImplCopyWith<$Res> {
-  __$$KFailureLocationDeniedPermanentlyImplCopyWithImpl(
-      _$KFailureLocationDeniedPermanentlyImpl _value,
-      $Res Function(_$KFailureLocationDeniedPermanentlyImpl) _then)
+class __$$KFailureLocationDeniedPermanentlyCopyWithImpl<$Res>
+    extends _$KFailureCopyWithImpl<$Res, _$KFailureLocationDeniedPermanently>
+    implements _$$KFailureLocationDeniedPermanentlyCopyWith<$Res> {
+  __$$KFailureLocationDeniedPermanentlyCopyWithImpl(
+      _$KFailureLocationDeniedPermanently _value,
+      $Res Function(_$KFailureLocationDeniedPermanently) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$KFailureLocationDeniedPermanentlyImpl
+class _$KFailureLocationDeniedPermanently
     implements KFailureLocationDeniedPermanently {
-  const _$KFailureLocationDeniedPermanentlyImpl();
+  const _$KFailureLocationDeniedPermanently();
 
   @override
   String toString() {
@@ -1541,10 +1531,10 @@ class _$KFailureLocationDeniedPermanentlyImpl
   }
 
   @override
-  bool operator ==(Object other) {
+  bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$KFailureLocationDeniedPermanentlyImpl);
+            other is _$KFailureLocationDeniedPermanently);
   }
 
   @override
@@ -1669,33 +1659,32 @@ class _$KFailureLocationDeniedPermanentlyImpl
 
 abstract class KFailureLocationDeniedPermanently implements KFailure {
   const factory KFailureLocationDeniedPermanently() =
-      _$KFailureLocationDeniedPermanentlyImpl;
+      _$KFailureLocationDeniedPermanently;
 }
 
 /// @nodoc
-abstract class _$$KFailureSomeThingWrongPleaseTryAgainImplCopyWith<$Res> {
-  factory _$$KFailureSomeThingWrongPleaseTryAgainImplCopyWith(
-          _$KFailureSomeThingWrongPleaseTryAgainImpl value,
-          $Res Function(_$KFailureSomeThingWrongPleaseTryAgainImpl) then) =
-      __$$KFailureSomeThingWrongPleaseTryAgainImplCopyWithImpl<$Res>;
+abstract class _$$KFailureSomeThingWrongPleaseTryAgainCopyWith<$Res> {
+  factory _$$KFailureSomeThingWrongPleaseTryAgainCopyWith(
+          _$KFailureSomeThingWrongPleaseTryAgain value,
+          $Res Function(_$KFailureSomeThingWrongPleaseTryAgain) then) =
+      __$$KFailureSomeThingWrongPleaseTryAgainCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$KFailureSomeThingWrongPleaseTryAgainImplCopyWithImpl<$Res>
-    extends _$KFailureCopyWithImpl<$Res,
-        _$KFailureSomeThingWrongPleaseTryAgainImpl>
-    implements _$$KFailureSomeThingWrongPleaseTryAgainImplCopyWith<$Res> {
-  __$$KFailureSomeThingWrongPleaseTryAgainImplCopyWithImpl(
-      _$KFailureSomeThingWrongPleaseTryAgainImpl _value,
-      $Res Function(_$KFailureSomeThingWrongPleaseTryAgainImpl) _then)
+class __$$KFailureSomeThingWrongPleaseTryAgainCopyWithImpl<$Res>
+    extends _$KFailureCopyWithImpl<$Res, _$KFailureSomeThingWrongPleaseTryAgain>
+    implements _$$KFailureSomeThingWrongPleaseTryAgainCopyWith<$Res> {
+  __$$KFailureSomeThingWrongPleaseTryAgainCopyWithImpl(
+      _$KFailureSomeThingWrongPleaseTryAgain _value,
+      $Res Function(_$KFailureSomeThingWrongPleaseTryAgain) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$KFailureSomeThingWrongPleaseTryAgainImpl
+class _$KFailureSomeThingWrongPleaseTryAgain
     implements KFailureSomeThingWrongPleaseTryAgain {
-  const _$KFailureSomeThingWrongPleaseTryAgainImpl();
+  const _$KFailureSomeThingWrongPleaseTryAgain();
 
   @override
   String toString() {
@@ -1703,10 +1692,10 @@ class _$KFailureSomeThingWrongPleaseTryAgainImpl
   }
 
   @override
-  bool operator ==(Object other) {
+  bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$KFailureSomeThingWrongPleaseTryAgainImpl);
+            other is _$KFailureSomeThingWrongPleaseTryAgain);
   }
 
   @override
@@ -1831,5 +1820,5 @@ class _$KFailureSomeThingWrongPleaseTryAgainImpl
 
 abstract class KFailureSomeThingWrongPleaseTryAgain implements KFailure {
   const factory KFailureSomeThingWrongPleaseTryAgain() =
-      _$KFailureSomeThingWrongPleaseTryAgainImpl;
+      _$KFailureSomeThingWrongPleaseTryAgain;
 }

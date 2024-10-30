@@ -12,7 +12,7 @@ part of 'api_client_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$ApiClientState {
@@ -75,26 +75,25 @@ class _$ApiClientStateCopyWithImpl<$Res, $Val extends ApiClientState>
 }
 
 /// @nodoc
-abstract class _$$ApiClientStateInitialImplCopyWith<$Res> {
-  factory _$$ApiClientStateInitialImplCopyWith(
-          _$ApiClientStateInitialImpl value,
-          $Res Function(_$ApiClientStateInitialImpl) then) =
-      __$$ApiClientStateInitialImplCopyWithImpl<$Res>;
+abstract class _$$ApiClientStateInitialCopyWith<$Res> {
+  factory _$$ApiClientStateInitialCopyWith(_$ApiClientStateInitial value,
+          $Res Function(_$ApiClientStateInitial) then) =
+      __$$ApiClientStateInitialCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$ApiClientStateInitialImplCopyWithImpl<$Res>
-    extends _$ApiClientStateCopyWithImpl<$Res, _$ApiClientStateInitialImpl>
-    implements _$$ApiClientStateInitialImplCopyWith<$Res> {
-  __$$ApiClientStateInitialImplCopyWithImpl(_$ApiClientStateInitialImpl _value,
-      $Res Function(_$ApiClientStateInitialImpl) _then)
+class __$$ApiClientStateInitialCopyWithImpl<$Res>
+    extends _$ApiClientStateCopyWithImpl<$Res, _$ApiClientStateInitial>
+    implements _$$ApiClientStateInitialCopyWith<$Res> {
+  __$$ApiClientStateInitialCopyWithImpl(_$ApiClientStateInitial _value,
+      $Res Function(_$ApiClientStateInitial) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$ApiClientStateInitialImpl implements ApiClientStateInitial {
-  const _$ApiClientStateInitialImpl();
+class _$ApiClientStateInitial implements ApiClientStateInitial {
+  const _$ApiClientStateInitial();
 
   @override
   String toString() {
@@ -102,10 +101,9 @@ class _$ApiClientStateInitialImpl implements ApiClientStateInitial {
   }
 
   @override
-  bool operator ==(Object other) {
+  bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ApiClientStateInitialImpl);
+        (other.runtimeType == runtimeType && other is _$ApiClientStateInitial);
   }
 
   @override
@@ -175,14 +173,14 @@ class _$ApiClientStateInitialImpl implements ApiClientStateInitial {
 }
 
 abstract class ApiClientStateInitial implements ApiClientState {
-  const factory ApiClientStateInitial() = _$ApiClientStateInitialImpl;
+  const factory ApiClientStateInitial() = _$ApiClientStateInitial;
 }
 
 /// @nodoc
-abstract class _$$ApiClientStateErrorImplCopyWith<$Res> {
-  factory _$$ApiClientStateErrorImplCopyWith(_$ApiClientStateErrorImpl value,
-          $Res Function(_$ApiClientStateErrorImpl) then) =
-      __$$ApiClientStateErrorImplCopyWithImpl<$Res>;
+abstract class _$$ApiClientStateErrorCopyWith<$Res> {
+  factory _$$ApiClientStateErrorCopyWith(_$ApiClientStateError value,
+          $Res Function(_$ApiClientStateError) then) =
+      __$$ApiClientStateErrorCopyWithImpl<$Res>;
   @useResult
   $Res call({KFailure failure});
 
@@ -190,11 +188,11 @@ abstract class _$$ApiClientStateErrorImplCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$ApiClientStateErrorImplCopyWithImpl<$Res>
-    extends _$ApiClientStateCopyWithImpl<$Res, _$ApiClientStateErrorImpl>
-    implements _$$ApiClientStateErrorImplCopyWith<$Res> {
-  __$$ApiClientStateErrorImplCopyWithImpl(_$ApiClientStateErrorImpl _value,
-      $Res Function(_$ApiClientStateErrorImpl) _then)
+class __$$ApiClientStateErrorCopyWithImpl<$Res>
+    extends _$ApiClientStateCopyWithImpl<$Res, _$ApiClientStateError>
+    implements _$$ApiClientStateErrorCopyWith<$Res> {
+  __$$ApiClientStateErrorCopyWithImpl(
+      _$ApiClientStateError _value, $Res Function(_$ApiClientStateError) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -202,7 +200,7 @@ class __$$ApiClientStateErrorImplCopyWithImpl<$Res>
   $Res call({
     Object? failure = null,
   }) {
-    return _then(_$ApiClientStateErrorImpl(
+    return _then(_$ApiClientStateError(
       failure: null == failure
           ? _value.failure
           : failure // ignore: cast_nullable_to_non_nullable
@@ -221,8 +219,8 @@ class __$$ApiClientStateErrorImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$ApiClientStateErrorImpl implements ApiClientStateError {
-  const _$ApiClientStateErrorImpl({required this.failure});
+class _$ApiClientStateError implements ApiClientStateError {
+  const _$ApiClientStateError({required this.failure});
 
   @override
   final KFailure failure;
@@ -233,10 +231,10 @@ class _$ApiClientStateErrorImpl implements ApiClientStateError {
   }
 
   @override
-  bool operator ==(Object other) {
+  bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ApiClientStateErrorImpl &&
+            other is _$ApiClientStateError &&
             (identical(other.failure, failure) || other.failure == failure));
   }
 
@@ -246,8 +244,8 @@ class _$ApiClientStateErrorImpl implements ApiClientStateError {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$ApiClientStateErrorImplCopyWith<_$ApiClientStateErrorImpl> get copyWith =>
-      __$$ApiClientStateErrorImplCopyWithImpl<_$ApiClientStateErrorImpl>(
+  _$$ApiClientStateErrorCopyWith<_$ApiClientStateError> get copyWith =>
+      __$$ApiClientStateErrorCopyWithImpl<_$ApiClientStateError>(
           this, _$identity);
 
   @override
@@ -315,10 +313,10 @@ class _$ApiClientStateErrorImpl implements ApiClientStateError {
 
 abstract class ApiClientStateError implements ApiClientState {
   const factory ApiClientStateError({required final KFailure failure}) =
-      _$ApiClientStateErrorImpl;
+      _$ApiClientStateError;
 
   KFailure get failure;
   @JsonKey(ignore: true)
-  _$$ApiClientStateErrorImplCopyWith<_$ApiClientStateErrorImpl> get copyWith =>
+  _$$ApiClientStateErrorCopyWith<_$ApiClientStateError> get copyWith =>
       throw _privateConstructorUsedError;
 }
